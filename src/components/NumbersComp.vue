@@ -40,12 +40,6 @@ function isSold(number) {
             </v-col>
         </v-row>
     </v-container>
-    <section class="info">
-        <h4>Para comprar un número, por favor comunicarse</h4>
-        <h4>con Claudia Ortiz al Número +56 9 3292 4555</h4>
-        <p>Esta página es solo informativa.</p>
-    </section>
-
 </template>
 
 <style scoped>
@@ -118,7 +112,5 @@ function isSold(number) {
 .white{
     background-color: white;
 }
-.info{
-    text-align: center;
-}
+
 </style>

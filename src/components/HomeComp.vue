@@ -1,6 +1,7 @@
 <script setup>
 import CardComp from './CardComp.vue'
 import NumbersComp from './NumbersComp.vue'
+import FooterComp from './FooterComp.vue'
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import NumbersComp from './NumbersComp.vue'
                 <NumbersComp/>
             </article>
         </v-container>
+        <FooterComp/>
     </section>
 </template>
 
