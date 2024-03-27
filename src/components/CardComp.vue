@@ -50,6 +50,10 @@ const productos = [
   {
     nombre: "Pie de Limon",
     img: "img/pie-limon.jpeg"
+  },
+  {
+    nombre: "Reloj Casio",
+    img: "img/reloj.jpeg"
   }
 ]
 </script>

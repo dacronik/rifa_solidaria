@@ -9,7 +9,7 @@ for (let i = 1; i <= 250; i++) {
     });
 }
 
-const numerosVendidos = ref([2, 111, 54, 75,22,44,65,123,155,213]);
+const numerosVendidos = ref([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,23,24,25,27,28,30,31,34,36,38,40,41,43,44,46,48,50,51,53,55,57,59,61,67,69,72,76,78,80,83,85,86,90,93,96,99,100,101,112,115,121,126,128,139,141,154,171,200,201,216,220,244,248,249]);
 
 function isSold(number) {
     return numerosVendidos.value.includes(number);
@@ -18,8 +18,18 @@ function isSold(number) {
 
 <template>
     <section class="title">
-        <h1>Numeros de Rifa</h1>
-
+        <h1>Números de Rifa</h1>
+        <div class="status-red">
+            <h5>Vendidos:</h5>
+            <div class="status-box red"></div>
+        </div>
+        <div class="status-white">
+            <h5>Disponibles:</h5>
+            <div class="status-box white"></div>
+        </div>
+        <div class="precio">
+            <h5>Valor del número $1.000</h5>
+        </div>
     </section>
     <v-container fluid>
         <v-row>
@@ -30,7 +40,11 @@ function isSold(number) {
             </v-col>
         </v-row>
     </v-container>
-
+    <section class="info">
+        <h4>Para comprar un número, por favor comunicarse</h4>
+        <h4>con Claudia Ortiz al Número +56 9 3292 4555</h4>
+        <p>Esta página es solo informativa.</p>
+    </section>
 
 </template>
 
@@ -81,5 +95,30 @@ function isSold(number) {
 .square.unsold {
     background-color: white;
     color: black;
+}
+.status-red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.status-white{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.status-box{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+.red{
+    background-color: red;
+}
+.white{
+    background-color: white;
+}
+.info{
+    text-align: center;
 }
 </style>
